@@ -112,7 +112,7 @@ body {
   }
 }
 
-/* RESPONSIVE */
+/* MEDIA QUERY SEPARADA (IMPORTANTE) */
 @media (max-width: 600px) {
 
   #contenido {
@@ -128,7 +128,15 @@ body {
   }
 
   .carousel {
-    width: 90%;
+    max-width: 90%;
+    margin: 0 auto 20px auto;
   }
 
+  #maquina {
+    white-space: pre-line;
+    line-height: 1.8;
+  }
+
+
 }
+
