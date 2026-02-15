@@ -61,7 +61,7 @@ eligiéndonos todos los días.
 Gracias por ser mi tranquilidad.
 Gracias por ser mi hogar.
 
-Siempre tú. Siempre nosotros.`;
+Siempre tú💘 Siempre nosotros👩‍❤️‍👨💘`;
 
   let i = 0;
 
@@ -105,4 +105,5 @@ Siempre tú. Siempre nosotros.`;
   }, 500);
 
 });
+
 
