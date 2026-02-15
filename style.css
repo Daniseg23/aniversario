@@ -126,9 +126,15 @@ body {
     margin: 0 auto 20px auto;
   }
 
+  #maquina {
+  white-space: pre-line;
+  line-height: 1.8;
+}
+  
 }
 
 }
+
 
 
 
