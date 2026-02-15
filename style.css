@@ -106,4 +106,27 @@ body {
     transform: translateY(-100vh);
     opacity: 0;
   }
+
+  @media (max-width: 600px) {
+
+  #contenido {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .carousel {
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
 }
+
+}
+
