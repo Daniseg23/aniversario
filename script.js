@@ -64,14 +64,15 @@ Gracias por ser mi hogar.
 Siempre tú💘 Siempre nosotros👩‍❤️‍👨💘`;
 
   let i = 0;
-  textoElemento.innerHTML = texto.replace(/\n/g, "<br>");
 
   function escribirTexto() {
-    if (i < mensaje.length) {
-      document.getElementById("maquina").innerHTML += mensaje.charAt(i);
-      i++;
-      setTimeout(escribirTexto, 35);
-    }
+  const maquina = document.getElementById("maquina");
+
+  if (i < mensaje.length) {
+    maquina.textContent += mensaje.charAt(i);
+    i++;
+    setTimeout(escribirTexto, 35);
+  }
   }
 
   // Contador
@@ -106,6 +107,7 @@ Siempre tú💘 Siempre nosotros👩‍❤️‍👨💘`;
   }, 500);
 
 });
+
 
 
 
