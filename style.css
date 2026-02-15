@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Pantalla inicial */
+#inicio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  transition: opacity 1s ease;
+}
+
+#inicio button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: #ff4d6d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Contenido */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+#contenido {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  transition: all 1.2s ease;
+}
+
+#contenido.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.carousel {
+  width: 70%;              /* tamaño más pequeño */
+  max-width: 400px;        /* límite en pantallas grandes */
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.slide {
+  width: 100%;
+  height: 300px;           /* altura fija */
+  object-fit: cover;       /* mantiene proporción y recorta bonito */
+  display: none;
+  border-radius: 20px;
+}
+
+
+.slide.active {
+  display: block;
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+  min-height: 150px;
+}
+
+#contador {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ff4d6d;
+}
+
+/* Corazones */
+.corazones span {
+  position: fixed;
+  bottom: -50px;
+  font-size: 20px;
+  animation: subir 8s linear infinite;
+  color: #ff4d6d;
+}
+
+@keyframes subir {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
