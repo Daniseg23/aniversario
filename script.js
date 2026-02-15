@@ -64,6 +64,7 @@ Gracias por ser mi hogar.
 Siempre tú💘 Siempre nosotros👩‍❤️‍👨💘`;
 
   let i = 0;
+  textoElemento.innerHTML = texto.replace(/\n/g, "<br>");
 
   function escribirTexto() {
     if (i < mensaje.length) {
@@ -105,5 +106,6 @@ Siempre tú💘 Siempre nosotros👩‍❤️‍👨💘`;
   }, 500);
 
 });
+
 
 
