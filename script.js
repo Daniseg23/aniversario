@@ -36,15 +36,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 4000);
 
   // Máquina de escribir
-  const mensaje = `Desde que llegaste a mi vida, todo cambió.
-Cada risa, cada abrazo y cada momento contigo
-se convirtió en algo que guardo como un tesoro.
+  const mensaje = `Ahora que llegaste aquí…
+quiero decirte algo que no siempre digo en voz alta.
 
-Gracias por estos dos años llenos de amor,
-paciencia y aventuras. No solo eres mi pareja,
-eres mi hogar.
+Gracias por estos dos años que hemos pasado.
+No solo por los momentos grandes, sino por los pequeños también.
+Por los días normales que contigo se volvieron especiales.
 
-Siempre tú. Siempre nosotros. 💖`;
+Gracias por quedarte incluso cuando no todo fue fácil.
+Tuvimos momentos dificiles pero aquí seguimos luchando juntos.
+Gracias por entenderme, por escucharme, por reírte conmigo.
+
+A veces no me doy cuenta de cuánto significas para mí hasta que pienso en mi vida sin ti…
+y simplemente no la imagino igual.
+
+Contigo aprendí que el amor no es perfecto,
+pero sí constante. Se le dedica tiempo, cariño y lealtad.
+
+Y si algo tengo claro después de estos dos años,
+es que quiero seguir construyendo contigo, sin prisa,
+sin promesas exageradas, solo nosotros, 
+eligiéndonos todos los días.
+
+Gracias por ser mi tranquilidad.
+Gracias por ser mi hogar.
+
+Siempre tú. Siempre nosotros.`;
 
   let i = 0;
 
@@ -88,3 +105,4 @@ Siempre tú. Siempre nosotros. 💖`;
   }, 500);
 
 });
+
