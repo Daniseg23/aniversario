@@ -49,8 +49,8 @@ body {
 }
 
 .carousel {
-  width: 70%;              /* tamaño más pequeño */
-  max-width: 400px;        /* límite en pantallas grandes */
+  width: 70%;
+  max-width: 400px;
   margin: 0 auto 20px auto;
   overflow: hidden;
   border-radius: 20px;
@@ -59,12 +59,11 @@ body {
 
 .slide {
   width: 100%;
-  height: 300px;           /* altura fija */
-  object-fit: cover;       /* mantiene proporción y recorta bonito */
+  height: 300px;
+  object-fit: cover;
   display: none;
   border-radius: 20px;
 }
-
 
 .slide.active {
   display: block;
@@ -76,14 +75,19 @@ body {
   to { opacity: 1; }
 }
 
+/* TEXTO */
 .text {
   font-size: 18px;
-  line-height: 1.6;
   min-height: 150px;
 }
 
+#maquina {
+  white-space: pre-wrap;  /* ESTA ES LA CLAVE */
+  line-height: 1.8;
+}
+
 #contador {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 16px;
   color: #ff4d6d;
 }
@@ -106,8 +110,10 @@ body {
     transform: translateY(-100vh);
     opacity: 0;
   }
+}
 
-  @media (max-width: 600px) {
+/* RESPONSIVE */
+@media (max-width: 600px) {
 
   #contenido {
     padding: 15px;
@@ -122,19 +128,7 @@ body {
   }
 
   .carousel {
-    max-width: 90%;
-    margin: 0 auto 20px auto;
+    width: 90%;
   }
 
-  #maquina {
-  white-space: pre-line;
-  line-height: 1.8;
 }
-  
-}
-
-}
-
-
-
-
